@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//     let object1 = {};
+// let object2 = { name: "John Doe" };
+// object1.property = object2;
+// console.log(object1);
+
+
+// let object = {};
+// let data = [{id: 1, name: "John Doe"}, {id: 2, name: "Jane Doe"},];
+
+// for (let i = 0; i < data.length; i++) {
+//   object[data[i].id] = data[i];
+// }
+// console.log(object);
+
+
+
+
+
+// const names ={
+//   sezan :{
+//     age : 28,
+//     dob : '',
+//     address : ""
+//   }
+// }
+
+
+// let fullObj ={};
+
+// function property(name, age,dob,address){
+//   // names.Name = name;
+//   // names.Age =age;
+//   // names.Date_of_Birth = dob;
+//   // names.Addres = address; 
+//   let names ={};
+//   if ((names.name && names.age && names.dob &&names.address)===undefined) {
+//     fullObj[name] = names;
+//     names.Age =age;
+//     names.Date_of_Birth = dob;
+//     names.Addres = address; 
+//   // fullObj.Names =names;
+//   }
+// }
+
+let fullObj = {};
+class property {
+  constructor(name,age,dob,address){
+    this[name]= {
+    Age : age,
+    Dob : dob,
+    Address : address,
+    }
+    fullObj[name]= this[name]
+    // this.age = age;
+    // this.dob = dob;
+    // this.address = address;
+  }
+}
+
+const fahim = new property("Fahim",25,"25th of jan ,2000","halishahar");
+const tazwer= new property("Tazwer",23,"5th of jun ,2000","chawkbazar");
+
+// console.log(fahim);
+// console.log(tazwer);
+console.log(fullObj);
+
+  </script>
+</body>
+</html>
+
+//functione names object e key word dhukbe 
